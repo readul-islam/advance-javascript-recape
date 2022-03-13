@@ -12,24 +12,24 @@ const myFunction = () =>{
 const callFunction = myFunction();
 
 // JavaScript closures in a loop
-// for (var index = 1; index <= 3; index++) {
-//     setTimeout(function () {
-//         console.log('after ' + index + ' second(s):' + index);
-//     }, index * 1000);
-// }
+for (var index = 1; index <= 3; index++) {
+    setTimeout(function () {
+        console.log('after ' + index + ' second(s):' + index);
+    }, index * 1000);
+}
 
 for (let i = 1; i <= 5; i++){
     setTimeout(function () {
-        // console.log('output' + i + 'secode after');
+        console.log('output' + i + 'secode after');
     }, (5000*i))
 }
 
 
-for (var index = 1; index <= 3; index++) {
-    (function (index) {
-        setTimeout(function () {
-            console.log('after ' + index + ' second(s):' + index);
-        }, index * 1000);
-    })(index);
-}
+// for (var index = 1; index <= 3; index++) {
+//     (function (index) {
+//         setTimeout(function () {
+//             console.log('after ' + index + ' second(s):' + index);
+//         }, index * 1000);
+//     })(index);
+// }
 

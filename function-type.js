@@ -8,20 +8,20 @@ function has two important properties they are (length) and (prototype).
 function add(x, y){
     return x + y;
 }
-// console.log(add.length);
-// console.log(add.prototype);
+console.log(add.length);
+console.log(add.prototype);
 
-/* normal call function 
+// /* normal call function 
  
-let result =new add(10,20);
-console.log(result);*/
+let result1 =new add(10,20);
+console.log(result1);
 
 // use constructor new keyword 
-// let result = new add(10,20);
-// console.log(result); 
+let result2 = new add(10,20);
+console.log(result2); 
 
 function obj(x, y){
-    // console.log(new.target);
+    console.log(new.target);
     return x + y;
 }
 const result =new obj(10,20);
